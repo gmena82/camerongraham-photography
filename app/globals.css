@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  ::selection {
+    background-color: #f5f0eb;
+    color: #0a0a0a;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scrollbar-color: #2a2a2a #0a0a0a;
+  }
+
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #0a0a0a;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #2a2a2a;
+    border-radius: 2px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #3a3a3a;
+  }
+
+  body {
+    overflow-x: hidden;
+    background-color: #0a0a0a;
+    color: #f5f0eb;
+    line-height: 1.45;
+  }
+
+  img {
+    -webkit-user-drag: none;
+  }
+
+  main {
+    isolation: isolate;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  input,
+  textarea,
+  select {
+    border-radius: 0;
+  }
+}
+
+@layer components {
+  .container-shell {
+    @apply max-w-[1400px] mx-auto px-6 md:px-12 lg:px-20;
+  }
+
+  .section-pad {
+    @apply py-24 md:py-32 lg:py-40;
+  }
+
+  .section-pad-tight {
+    @apply py-16 md:py-20 lg:py-24;
+  }
+
+  .eyebrow {
+    @apply text-[11px] tracking-[0.3em] uppercase text-muted;
+  }
+
+  .body-copy {
+    @apply text-silver text-[15px] md:text-base leading-relaxed;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center border border-cream text-cream px-8 md:px-10 py-3.5 md:py-4 text-[12px] md:text-[13px] tracking-[0.2em] uppercase transition-all duration-500 hover:bg-cream hover:text-dark;
+  }
+
+  .btn-solid {
+    @apply inline-flex items-center justify-center border border-cream bg-cream text-dark px-8 md:px-10 py-3.5 md:py-4 text-[12px] md:text-[13px] tracking-[0.2em] uppercase transition-all duration-500 hover:bg-stone hover:border-stone;
+  }
+
+  .btn-text {
+    @apply text-silver text-sm tracking-[0.15em] uppercase hover:text-cream transition-colors;
+  }
+
+  .image-frame {
+    @apply relative overflow-hidden bg-surface border border-line;
+  }
+
+  .form-label {
+    @apply block text-[11px] tracking-[0.3em] uppercase text-muted mb-3;
+  }
+
+  .form-control {
+    @apply w-full bg-transparent border-b border-line pb-3.5 text-cream text-lg focus:outline-none focus:border-cream transition-colors placeholder:text-muted;
+  }
+
+  .section-divider {
+    @apply border-t border-line;
+  }
+}
