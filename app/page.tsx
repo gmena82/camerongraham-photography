@@ -6,27 +6,27 @@ const featuredWorks = [
   {
     title: "Midnight Session",
     category: "Skate",
-    src: "https://images.unsplash.com/photo-1633083993653-873aaf08da48?auto=format&fit=crop&w=800&q=80",
+    src: "/photos/30a5b064.jpg",
   },
   {
     title: "Studio Light",
     category: "Portrait",
-    src: "https://images.unsplash.com/photo-1746960854622-cf413c68eea7?auto=format&fit=crop&w=800&q=80",
+    src: "/photos/100f0aa0.jpg",
   },
   {
     title: "Quiet Confidence",
     category: "Portrait",
-    src: "https://images.unsplash.com/photo-1770296877116-c4973c84d339?auto=format&fit=crop&w=800&q=80",
+    src: "/photos/5e33164c.jpg",
   },
   {
     title: "Golden Hour",
     category: "Lifestyle",
-    src: "https://images.unsplash.com/photo-1762810664585-9e25b74bcdcd?auto=format&fit=crop&w=800&q=80",
+    src: "/photos/f67cea94.jpg",
   },
   {
     title: "Hard Light",
     category: "Portrait",
-    src: "https://images.unsplash.com/photo-1758590776495-ca8a628d1013?auto=format&fit=crop&w=800&q=80",
+    src: "/photos/b9701d5f.jpg",
   },
 ];
 
@@ -72,8 +72,8 @@ export default function Home() {
     <main>
       <section className="relative min-h-screen overflow-hidden">
         <Image
-          src="https://images.unsplash.com/photo-1763044937917-997625dcfffa?auto=format&fit=crop&w=1920&q=80"
-          alt="Skateboarder performing an ollie at night in a skate park"
+          src="/photos/068181e8.jpg"
+          alt="Skateboarder performing a night trick under dramatic lighting"
           fill
           className="object-cover grayscale brightness-[0.3] scale-[1.05] animate-slow-zoom"
           priority
@@ -172,8 +172,8 @@ export default function Home() {
             <ScrollReveal>
               <div className="image-frame aspect-[3/4]">
                 <Image
-                  src="https://images.unsplash.com/photo-1754476151319-bc8cf50a1807?auto=format&fit=crop&w=800&q=80"
-                  alt="Cameron Graham - Photographer"
+                  src="/photos/100f0aa0.jpg"
+                  alt="Cameron Graham portrait"
                   fill
                   className="object-cover grayscale"
                   sizes="(max-width: 768px) 100vw, 50vw"

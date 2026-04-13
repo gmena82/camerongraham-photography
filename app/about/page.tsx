@@ -31,7 +31,7 @@ export default function About() {
             <ScrollReveal className="lg:col-span-5">
               <div className="image-frame aspect-[3/4]">
                 <Image
-                  src="https://images.unsplash.com/photo-1754476151319-bc8cf50a1807?auto=format&fit=crop&w=800&q=80"
+                  src="/photos/100f0aa0.jpg"
                   alt="Cameron Graham"
                   fill
                   className="object-cover grayscale"
